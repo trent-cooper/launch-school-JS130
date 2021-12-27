@@ -1,5 +1,4 @@
 function myBind(func, context, ...args) {
-  // let args = [].slice.call(arguments, 2);
   return function() {
     return func.call(context, ...args, ...arguments);
   };
